@@ -8,7 +8,10 @@
 #include <stan/math/prim/scal/err/invalid_argument.hpp>
 #include <boost/lexical_cast.hpp>
 
-#include <tbb/tbb.h>
+#include "tbb/blocked_range.h"
+#include "tbb/parallel_for.h"
+#include "tbb/partitioner.h"
+
 #include <vector>
 #include <cstdlib>
 
